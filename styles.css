@@ -1,3 +1,89 @@
-body {
-    background-color: powderblue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --bg: #221F26;
+    --text-color: hsl(192, 16%, 94%);
+    --accent: #F6CE2B;
+    --text-family: "Poppins", sans-serif;
   }
+
+
+body {
+  background-color: var(--bg);
+  color: var(--text-color);
+  margin: 10px 5vw;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.Logo img{
+  width: 30px;
+  border-radius: 100%;
+}
+
+.Logo{
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: var(--text-family);
+  font-size: clamp(12px, 1.5vw, 24px);
+  font-weight: 200;
+  display: flex;
+  gap: 5px;
+}
+
+nav a {
+  margin-left: 3vw;
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: var(--text-family);
+  font-size: clamp(12px, 1.5vw, 24px);
+  font-weight: 200;
+}
+nav a:hover{
+  color: var(--accent);
+}
+
+main {
+  padding: 7vh 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  box-sizing: border-box;
+  flex: 1;
+  padding: 10px;
+}
+/* .main-text h1, h2{
+  margin: 5px 0;
+} */
+
+.main-text h1{
+  font-family: var(--text-family);
+  font-weight: bold;
+  font-size: clamp(24px, 7vw, 128px);
+}
+.main-text h2{
+  font-family: var(--text-family);
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 500;
+}
+
+#Image{
+  flex: 1;
+  object-fit: cover;
+  position: relative;
+  min-width: 300px;
+  border-radius: 10px;
+
+}
